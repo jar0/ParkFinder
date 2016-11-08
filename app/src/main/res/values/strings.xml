@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ParkingFinder</string>
+    <string name="www_parkhere_pl">www.parkhere.pl</string>
+    <string name="kontynuuj_bez_logowania">Kontynuuj bez logowania</string>
+    <string name="rejestracja">Rejestracja</string>
+    <string name="logowanie">Logowanie</string>
+    <string-array name="miasta">
+        <item>Białystok</item>
+        <item>Bydgoszcz</item>
+        <item>Gdańsk</item>
+        <item>Gdynia</item>
+        <item>Inowrocław</item>
+        <item>Jelenia Góra</item>
+        <item>Kraków</item>
+        <item>Lublin</item>
+        <item>Łódź</item>
+        <item>Olsztyn</item>
+        <item>Opole</item>
+        <item>Piła</item>
+        <item>Poznań</item>
+        <item>Radom</item>
+        <item>Rzeszów</item>
+        <item>Sopot</item>
+        <item>Stargard</item>
+        <item>Szczecin</item>
+        <item>Toruń</item>
+        <item>Warszawa</item>
+        <item>Wrocław</item>
+        <item>Zielona Góra</item>
+    </string-array>
+</resources>
