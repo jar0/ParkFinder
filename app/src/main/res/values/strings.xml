@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ParkingFinder</string>
-    <string name="www_parkhere_pl">www.parkhere.pl</string>
-    <string name="kontynuuj_bez_logowania">Kontynuuj bez logowania</string>
+    <string name="www_parkingfinder_pl">www.parkingfinder.pl</string>
+    <string name="kontynuuj">Znajdź parking</string>
     <string name="rejestracja">Rejestracja</string>
     <string name="logowanie">Logowanie</string>
     <string-array name="miasta">
@@ -28,4 +28,5 @@
         <item>Wrocław</item>
         <item>Zielona Góra</item>
     </string-array>
+    <string name="title_activity_maps">Map</string>
 </resources>

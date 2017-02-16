@@ -13,12 +13,44 @@
     tools:context="com.example.jarek.parkingfinder.TownListActivity">
 
     <TextView
-        android:id="@+id/chooseTownView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wybierz Miasto"
+        android:text="Wpisz nazwę miasta"
         android:textSize="20sp"
+        android:textStyle="bold"
         android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/etTownName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:hint="Wpisz nazwę miasta"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/searchTownBtn"
+            android:onClick="searchTownBtnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Idź"
+            android:layout_weight="0"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lub wybierz z listy"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
 
     <ListView
         android:id="@+id/townListView"
@@ -28,44 +60,5 @@
         android:background="@android:color/white"
         android:layout_marginTop="10dp"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Dalej"
-        android:onClick="townBtnClick"/>
-
-    <!--<Spinner-->
-        <!--android:id="@+id/townSpinner"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@+id/chooseTownView"-->
-        <!--android:background="@android:color/white"/>-->
-
-
-
-    <!--<ScrollView-->
-        <!--android:id="@+id/scrollView"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@+id/chooseTownView"-->
-        <!--android:paddingTop="5dp">-->
-
-
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:background="@android:color/darker_gray">-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/townTextView"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string-array/miasta"/>-->
-
-
-        <!--</LinearLayout>-->
-
-    <!--</ScrollView>-->
 
 </LinearLayout>

@@ -29,7 +29,6 @@ public class LogoView extends RelativeLayout {
     }
 
 
-
     public LogoView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         inflater = LayoutInflater.from(context);

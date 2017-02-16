@@ -8,30 +8,30 @@
 
     <com.example.jarek.parkingfinder.LogoView
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:link="@string/www_parkhere_pl"/>
+        android:layout_height="match_parent" />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/continueBtn">
+        android:layout_above="@+id/continueBtn"
+        android:id="@+id/linearLayout">
 
-        <Button
-            android:id="@+id/singInBtn"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:onClick="singInBtnClick"
-            android:text="@string/logowanie"/>
+        <!--<Button-->
+            <!--android:id="@+id/singInBtn"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="singInBtnClick"-->
+            <!--android:text="@string/logowanie"/>-->
 
-        <Button
-            android:id="@+id/singUpBtn"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:onClick="singUpBtnClick"
-            android:text="@string/rejestracja" />
+        <!--<Button-->
+            <!--android:id="@+id/singUpBtn"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="singUpBtnClick"-->
+            <!--android:text="@string/rejestracja" />-->
 
     </LinearLayout>
 
@@ -40,8 +40,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="continueBtnClick"
-        android:text="@string/kontynuuj_bez_logowania"
+        android:text="@string/kontynuuj"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="48dp" />
+
+    <TextView
+        android:id="@+id/linkTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="146dp"
+        android:text="@string/www_parkingfinder_pl"
+        android:autoLink="web"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColorLink="@android:color/white"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

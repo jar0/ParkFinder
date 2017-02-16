@@ -24,7 +24,7 @@
         android:layout_below="@+id/logo"
         android:layout_centerHorizontal="true"
         android:paddingTop="5dp"
-        android:text="@string/www_parkhere_pl"
+        android:text="@string/www_parkingfinder_pl"
         android:textColor="@android:color/white"
         android:textSize="22sp" />
 
